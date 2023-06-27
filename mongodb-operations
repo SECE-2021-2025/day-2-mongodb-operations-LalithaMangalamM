@@ -32,7 +32,7 @@ db.users.findOne({ name: "padma" })
 //update only one record
 db.users.updateOne({ name: "masila" }, { $set: { email: "masila@gmail.com" } })
 //update multiple records
-db.users.updateMany({ age: { $lt: 30 } }, { $set: { status: "active" } })
+db.users.updateMany({ age: 30 }, { $set: { status: "active" } })
 //delete only one record
 db.users.deleteOne({ name: "priya s" })
 //delete multiple records
