@@ -25,7 +25,7 @@ db.users.insertMany([
 ]);
 //display records
 db.users.find()
-//bisplaying based on condition
+//displaying based on condition
 db.users.find({ age: { $gt: 29 } })
 //display only one record
 db.users.findOne({ name: "padma" })
